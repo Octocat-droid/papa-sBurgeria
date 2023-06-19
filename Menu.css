@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.logo a{
+    text-decoration-line: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul li a{
+    color: black;
+    text-decoration-line: none;
+    font-family: 'Architects Daughter', cursive; 
+    display: inline-block;
+    padding: 16px;
+    font-size: 25px;
+}
+
+ul li a:hover{
+    color: black;
+    text-decoration-line: overline;
+}
+
+@media (max-width:749px){
+    .active{
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(169,169,169);
+        left: 0;
+        top: 53px;
+        width: 100%;
+        display: none;
+    }
+
+    ul li a{
+        width: 100%;
+    }
+    
+    .active{
+        display: flex;
+    }
+}
+
+.row h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+
+.row h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.row p{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+li{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+
+hr{
+    background-color: grey;
+    color: grey;
+}

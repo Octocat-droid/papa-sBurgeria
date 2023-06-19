@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa's Burgeria - Reservations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Reservations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="./Home.html">
+                <h1>Papa's Burgeria</h1>
+            </a></div>
+        <ul id="links" class="active">
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./Menu.html">Menu</a></li>
+            <li><a href="./Reservations.html">Reservations</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="image">
+        <img src="./priscilla-du-preez-wPgIiL4DDug-unsplash.jpg" alt="image">
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <form action="">
+            <p>Date</p>
+            <input type="date">
+        </div>
+        <div class="col-sm">
+            <p>Hour</p>
+            <select name="hours" id="hours">
+                <option value="h9">9 AM</option>
+                <option value="h93">9:30 AM</option>
+                <option value="h10">10 AM</option>
+                <option value="h103">10:30 AM</option>
+                <option value="h11">11 AM</option>
+                <option value="h113">11:30 AM</option>
+                <option value="h12">12:00 PM</option>
+                <option value="123">12:30 PM</option>
+                <option value="h13">13 PM</option>
+                <option value="h133">13:30 PM</option>
+                <option value="h14">14 PM</option>
+                <option value="h143">14:30 PM</option>
+                <option value="h15">15 PM</option>
+                <option value="h153">15:30 PM</option>
+                <option value="h16">16 PM</option>
+                <option value="h163">16:30 PM</option>
+                <option value="h17">17 PM</option>
+                <option value="h173">17:30 PM</option>
+                <option value="h18">18 PM</option>
+                <option value="h183">18:30 PM</option>
+                <option value="h19">19 PM</option>
+                <option value="h193">19:30 PM</option>
+                <option value="h20">20 PM</option>
+                <option value="h203">20:30 PM</option>
+                <option value="h21">21 PM</option>
+                <option value="h213">21:30 PM</option>
+                <option value="h22">22 PM</option>
+                <option value="h223">22:30 PM</option>
+            </select>
+            </div>
+            <div class="col-sm">
+            <p>No. of person</p>
+            <select name="people" id="people">
+                <option value="n1">1 people</option>
+                <option value="h2">2 people</option>
+                <option value="n3">3 people</option>
+                <option value="n4">4 people</option>
+                <option value="n5">5 people</option>
+                <option value="n6">6 people</option>
+                <option value="n7">7 people</option>
+                <option value="n8">8 people</option>
+                <option value="n8">9 people</option>
+                <option value="n10">10 people</option>
+            </select>
+            </div>
+            <div class="col-sm">
+            <p>First Name</p>
+            <input type="text">
+            </div>
+            <div class="col-sm">
+            <p>Last Name</p>
+            <input type="text">
+            </div>
+            <div class="col-sm">
+            <p>Phone</p>
+            <input type="text">
+            </div>
+            <div class="col-sm">
+            <p>Email</p>
+            <input type="text">
+            </div>
+            <div class="button">
+                <input type="submit" value="Make reservation" onclick="alert('Rezervare efectuata!')">
+            </div>
+            </form>
+    </div>
+</body>
+</html>

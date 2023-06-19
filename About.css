@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.logo a{
+    text-decoration-line: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul li a{
+    color: black;
+    text-decoration-line: none;
+    font-family: 'Architects Daughter', cursive; 
+    display: inline-block;
+    padding: 16px;
+    font-size: 25px;
+}
+
+ul li a:hover{
+    color: black;
+    text-decoration-line: overline;
+}
+
+@media (max-width:749px){
+    ul{
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(169,169,169);
+        left: 0;
+        top: 53px;
+        width: 100%;
+        display: none;
+    }
+
+    ul li a{
+        width: 100%;
+    }
+    
+    .active{
+        display: flex;
+    }
+}
+
+body {
+    min-height: 100%;
+    background-image: url(paula-vermeulen-URjZkhqsuBk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main .content p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.main{
+    position: fixed;
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    width: 100%;
+    min-width: 300px;
+    max-height: 400px;
+}

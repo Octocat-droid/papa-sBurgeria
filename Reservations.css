@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.logo a{
+    text-decoration-line: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul li a{
+    color: black;
+    text-decoration-line: none;
+    font-family: 'Architects Daughter', cursive; 
+    display: inline-block;
+    padding: 16px;
+    font-size: 25px;
+}
+
+ul li a:hover{
+    color: black;
+    text-decoration-line: overline;
+}
+
+@media (max-width:749px){
+    ul{
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(169,169,169);
+        left: 0;
+        top: 53px;
+        width: 100%;
+        display: none;
+    }
+
+    ul li a{
+        width: 100%;
+    }
+    
+    .active{
+        display: flex;
+    }
+}
+
+ #image img{
+    width: 100%;
+    height: 70%;
+}
+
+.row{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 75%;
+    width: 100.8%;
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(169,169,169);
+}
+
+input[type='text']{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type='submit']{
+    border: none;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.row p{
+    font-family: 'Raleway', sans-serif;
+}
